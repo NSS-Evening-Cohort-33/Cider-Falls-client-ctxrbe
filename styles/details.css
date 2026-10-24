@@ -17,6 +17,15 @@
     text-align: center;
 }
 
+.details__services {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    border: 1rem ridge #a1f9bb30;
+    justify-content: center;
+    align-items: flex-start;
+}
+
 .details__destinations h2 {
     flex-basis: 100%;
 }
