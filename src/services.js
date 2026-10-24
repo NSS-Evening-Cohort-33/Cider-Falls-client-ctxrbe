@@ -4,8 +4,7 @@ export const createServices = () => {
     //build a <ul> with one <li> per service, with the three data attributes 
     let serviceHTML = `<ul>`
     const services = servicesDb()
-    const destinationServices = destinationServicesDb()
-    const destinations = destinationsDb()
+
     for (const service of services) {
         serviceHTML += `<li data-type="service" data-id="${service.id}" data-name="${service.serviceName}">${service.serviceName}</li>`
         }
@@ -14,6 +13,7 @@ export const createServices = () => {
 }
 
 document.addEventListener("click", (clickEvent) => {
+    
     const itemClicked = clickEvent.target
 
     if (itemClicked.dataset.type === "service") {
