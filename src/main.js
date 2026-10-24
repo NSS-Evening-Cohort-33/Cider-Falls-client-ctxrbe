@@ -1,17 +1,18 @@
 // import { createDestinations } from './destinations.js'
 import { createGuests } from "./guests.js";
 
-
 const mainContainer = document.querySelector("#container");
 
 const applicationHTML = `
-<section id="destination-container">
-    <h2>Destionations</h2>
-    insert createDestinations() function here
-</section>
-<section id="guests-container">
-    <h2>Current Park Guests</h2>
-      ${createGuests()}
-</section>
-`;
-mainContainer.innerHTML = applicationHTML;
+<article class="details">
+    <section class="details__destinations">
+        <h2>Destinations</h2>
+        replace this line with createDestinations()
+    </section>
+    <section class="details__guests">
+        <h2>Current Park Guests</h2>
+        ${createGuests()}
+    </section>
+</article>
+`
+mainContainer.innerHTML = applicationHTML
