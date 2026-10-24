@@ -1,6 +1,7 @@
 // import { createDestinations } from './destinations.js'
 import { createGuests } from "./guests.js";
 
+
 const mainContainer = document.querySelector("#container");
 
 const applicationHTML = `
