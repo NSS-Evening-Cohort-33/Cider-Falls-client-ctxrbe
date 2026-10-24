@@ -23,7 +23,7 @@
 
 .destination__name {
     font-family: "Rubik Dirt", system-ui;
-    color: rgb(0 0 0 / 75%);
+    color: rgba(39, 21, 10, 0.75);
 }
 
 .header {
