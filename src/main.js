@@ -7,7 +7,7 @@ const applicationHTML = `
 <article class="details">
     <section class="details__destinations">
         <h2>Destinations</h2>
-        ${createGuests()}
+        ${createDestinations()}
     </section>
     <section class="details__guests">
         <h2>Current Park Guests</h2>
