@@ -7,7 +7,9 @@ export const createServices = () => {
     const destinationServices = destinationServicesDb()
     const destinations = destinationsDb()
     for (const service of services) {
-        serviceHTML += `<li data-type="service" data-id="${service.id}" data-name="${service.serviceName}">${service.serviceName}</li>`
+        serviceHTML += `
+        <li data-type="service" data-id="${service.id}" data-name="${service.serviceName}">${service.serviceName}</li>
+        `
         }
     serviceHTML += `</ul>`
     return serviceHTML
