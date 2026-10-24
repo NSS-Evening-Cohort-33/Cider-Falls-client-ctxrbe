@@ -9,9 +9,11 @@ export const createDestinations = () => {
     //first loop to start looping through all of the destinations
     for (const destination of destinations) {
         html += `
-        <h2 data-type="destination" data-id="${destination.id}" data-name="${destination.destinationName}" >${destination.destinationName}</h2>
+        <section class="destination">
+        <h2 data-type="destination" data-id="${destination.id}" data-name="${destination.destinationName}" class="destination__name">${destination.destinationName}</h2>
         <h3>${destination.destinationName}, located in the ${destination.parkArea}, offers the following services:</h3>
         ${DestinationServicesList(destination.id)}
+        </section>
         `
     }
     return html

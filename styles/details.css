@@ -1,12 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+
 .details {
     display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
     margin: 1rem 2rem;
     padding: .5rem 3rem;
+
+}
+
+.destination {
+    flex-basis: 30%;
 }
 
 .details h2 {
     text-align: center;
+}
+
+.details__destinations h2 {
+    flex-basis: 100%;
+}
+
+.destination__name {
+    font-family: "Rubik Dirt", system-ui;
+    color: rgb(0 0 0 / 75%);
 }
 
 .header {
@@ -15,7 +32,19 @@
     align-items: center;
 }
 
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.parkInfo {
+    margin: 3rem;
+}
+
 .details__destinations {
+    display: flex;
     flex: 3;
     flex-direction: row;
     border: 1rem ridge #a1f9bb30;
@@ -26,6 +55,7 @@
 }
 
 .details__guests {
+    display: flex;
     flex: 1;
     flex-direction: column;
     border: 1rem ridge #a1f9bb30;
