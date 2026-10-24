@@ -1,0 +1,82 @@
+.details {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.detail--column {
+    flex-basis: 24%;
+    margin: 1rem 2rem;
+    padding: .5rem 3rem;
+    border: 1px dotted rgb(61, 129, 196);
+}
+
+.detail--row {
+    flex-basis: 80%;
+    flex-direction: row;
+    margin: 1rem 2rem;
+    padding: .5rem 3rem;
+    border: 1px dotted rgb(61, 129, 196);
+}
+
+// for DESTINATIONS grid
+.grid-container {
+    display: grid;
+    grid-template-column: repeat(3, 1fr);
+}
+s
+// in div commands
+
+.header {
+    display: flex;
+    border: 8px solid black;
+    justify-content: center;
+    min-height: 800px;
+    align-items: center;
+}
+
+.destinations {
+    display: flex;
+    border: 8px solid black;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+
+.guests {
+    display: flex;
+    border: 8px solid black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.parkinfo {
+    display: flex;
+    border: 8px solid black;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+// for content within each box... div class box
+// add background-color: _ to box if needed
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+/*
+in index:
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+need row-gap: _px/rem?? need column-gap: _px/rem??
+*/
